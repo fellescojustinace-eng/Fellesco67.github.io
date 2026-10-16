@@ -1,0 +1,293 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #061426;
+    color: white;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(4, 18, 35, 0.95);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #1683d8;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4db8ff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4db8ff;
+}
+
+/* HOME / HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 50px;
+    background: radial-gradient(circle at top, #103b63, #061426 60%);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+/* PROFILE PICTURE */
+.profile-container {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(135deg, #4db8ff, #0077cc);
+    box-shadow: 0 0 35px rgba(77, 184, 255, 0.4);
+}
+
+.profile-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 4px solid #061426;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #4db8ff;
+}
+
+.hero h2 {
+    font-size: 25px;
+    color: #9edcff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #b7c8d8;
+    font-size: 18px;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #0c3152;
+    border: 1px solid #1683d8;
+    color: #4db8ff;
+}
+
+/* ALL SECTIONS */
+section {
+    padding: 90px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 45px;
+    color: #4db8ff;
+}
+
+/* ABOUT */
+.about {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    color: #c6d5e2;
+    font-size: 18px;
+}
+
+/* SKILLS */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skill-card {
+    background: #0b2037;
+    border: 1px solid #164c75;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #4db8ff;
+    box-shadow: 0 10px 30px rgba(77, 184, 255, 0.15);
+}
+
+.skill-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    color: #4db8ff;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #aebdca;
+    font-size: 14px;
+}
+
+/* CLOUD JOURNEY */
+.journey {
+    max-width: 900px;
+    margin: auto;
+}
+
+.journey-item {
+    background: #0b2037;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-left: 4px solid #4db8ff;
+    border-radius: 8px;
+}
+
+.journey-item h3 {
+    color: #4db8ff;
+    margin-bottom: 8px;
+}
+
+.journey-item p {
+    color: #b7c8d8;
+}
+
+/* CAREER GOAL */
+.goal {
+    max-width: 900px;
+    margin: auto;
+    background: linear-gradient(135deg, #0b2946, #092038);
+    padding: 45px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #176ca3;
+}
+
+.goal h3 {
+    font-size: 30px;
+    color: #4db8ff;
+    margin-bottom: 15px;
+}
+
+.goal p {
+    color: #c3d4e1;
+    font-size: 17px;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px 0;
+    color: #c4d2de;
+}
+
+.contact span {
+    color: #4db8ff;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #030d18;
+    color: #72879a;
+    border-top: 1px solid #123b5a;
+}
+
+/* TABLET RESPONSIVE DESIGN */
+@media (max-width: 800px) {
+    nav {
+        padding: 15px 5%;
+    }
+
+    nav ul {
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .profile-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    section {
+        padding: 70px 5%;
+    }
+}
